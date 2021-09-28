@@ -1,0 +1,38 @@
+#restaurant-show {
+    min-height: calc(100vh - 425px);
+    .details {
+        ul {
+            list-style: none;
+            padding-inline-start: 0;
+            li {
+                margin: 10px 0;
+            }
+        }
+        .fas {
+            color: #17a2b8;
+        }
+        .restaurant-image {
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    @media screen and(max-width:575px) {
+        a {
+            margin: 10px 0;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        .details {
+            .restaurant-image {
+                height: 300px;
+            }
+        }
+    }
+}
